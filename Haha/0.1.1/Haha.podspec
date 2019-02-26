@@ -28,14 +28,15 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Haha/Classes/**/*'
+  #s.source_files = 'Haha/Classes/**/*'
   
-  #s.subspec 'Testing' do |t|
+  s.subspec 'Testing' do |t|
+      t.source_files = 'Haha/Classes/Testing/**/*'
   # t.subspec 'EnEn' do |en|
   #   en.source_files = 'Haha/Classes/Testing/EnEn/DYTTesting.h'
   #   en.source_files = 'Haha/Classes/Testing/EnEn/DYTTesting.m'
   # end
-  #end
+  end
   
   # s.resource_bundles = {
   #   'Haha' => ['Haha/Assets/*.png']
